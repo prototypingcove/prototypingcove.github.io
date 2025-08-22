@@ -8,11 +8,70 @@
 <meta name="robots" content="max-image-preview:large">
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }
 		/* Disable animation for specific elements */
-.elementor-element[data-settings*="fadeInUp"] {
+/* .elementor-element[data-settings*="fadeInUp"] {
     animation: none !important;
     transition: none !important;
-}
-	</style>
+} */
+					.custom-link-fade {
+						color: whitesmoke !important;
+						font-weight: bold !important;
+						text-transform: uppercase !important;
+						letter-spacing: 2px;
+						font-family: 'Arial', sans-serif;
+						text-decoration: none;
+						transition: color 0.2s, filter 0.2s, transform 0.2s;
+						display: inline-block;
+					}
+					.custom-link-fade:hover {
+						color: #00ffff !important;
+						transform: scale(.99);
+					}
+					.custom-link-email-fade:hover {
+						color: #00ffff !important;
+						transform: scale(.99);
+					}
+					.custom-nav-links {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						flex-wrap: wrap;
+						gap: 0.5em;
+					}
+					.custom-nav-links .custom-link-group {
+						display: flex;
+						align-items: center;
+						gap: 0.2em;
+					}
+					.custom-nav-links .custom-sep {
+						color: #BF9D68;
+						/* margin: 0 12px; */
+						font-weight: bold;
+						font-size: 1.2em;
+					}
+
+					.custom-dis{
+						display: none;
+					}
+					@media (max-width: 600px) {
+						.custom-nav-links {
+							flex-direction: column;
+							gap: 0.2em;
+						}
+						.custom-nav-links .custom-sep {
+							margin: 0 0 2px 0;
+							font-size: 1em;
+						}
+						.custom-link-fade {
+							font-size: 1em;
+						}
+						.custom-nav-links .custom-link-group {
+							gap: 0.2em;
+						}
+						.custom-dis{
+							display: flex;
+						}
+					}
+				</style>
 	<link rel="dns-prefetch" href="http://fonts.googleapis.com">
 <link rel="alternate" type="application/rss+xml" title="Ramendra's Portfolio &raquo; Feed" href="feed/index.html">
 <link rel="alternate" type="application/rss+xml" title="Ramendra's Portfolio &raquo; Comments Feed" href="comments/feed/index.html">
@@ -116,8 +175,8 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 flexibility(document.documentElement);
 </script>
 <![endif]-->
-<script src="wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
-<script src="wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script src="wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js" defer></script>
+<script src="wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer></script>
 <!-- <script src="wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.24.2" id="font-awesome-4-shim-js"></script> -->
 <link rel="https://api.w.org/" href="wp-json/index.html"><link rel="alternate" title="JSON" type="application/json" href="wp-json/wp/v2/pages/213/index.html"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd">
 <meta name="generator" content="WordPress 6.8.1">
@@ -233,110 +292,54 @@ flexibility(document.documentElement);
 		</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-621e097 e-con-full e-flex elementor-invisible e-con e-child" data-id="621e097" data-element_type="container" data-settings='{"animation":"fadeIn"}'>
-				<div class="elementor-element elementor-element-aa866db elementor-widget-mobile__width-initial elementor-invisible elementor-widget elementor-widget-heading" data-id="aa866db" data-element_type="widget" data-settings='{"_animation":"fadeInUp"}' data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-621e097 e-con-full e-flex e-con e-child" data-id="621e097" data-element_type="container">
+			<div class="elementor-element elementor-element-aa866db elementor-widget-mobile__width-initial elementor-widget elementor-widget-heading" data-id="aa866db" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<h1 class="elementor-heading-title elementor-size-default">Ramendra Tripathi</h1>		</div>
+					<h1 class="elementor-heading-title elementor-size-default">Ramendra Tripathi</h1>
 				</div>
-				<div class="elementor-element elementor-element-0dcca11 elementor-invisible elementor-widget elementor-widget-heading" data-id="0dcca11" data-element_type="widget" data-settings='{"_animation":"fadeInUp"}' data-widget_type="heading.default">
+			</div>
+			<div class="elementor-element elementor-element-0dcca11 elementor-widget elementor-widget-heading" data-id="0dcca11" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Narrative Designer | &#2357;&#2352;&#2381;&#2339;&#2367;&#2344;&#2381; | Writer</h2>		</div>
+					<h2 class="elementor-heading-title elementor-size-default">Narrative Designer | &#2357;&#2352;&#2381;&#2339;&#2367;&#2344;&#2381; | Writer</h2>
 				</div>
-				<div class="elementor-element elementor-element-57b61d7 elementor-invisible elementor-widget elementor-widget-heading" data-id="57b61d7" data-element_type="widget" data-settings='{"_animation":"fadeInUp"}' data-widget_type="heading.default">
+			</div>
+			<div class="elementor-element elementor-element-57b61d7 elementor-widget elementor-widget-heading" data-id="57b61d7" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<h4 class="elementor-heading-title elementor-size-default" style="margin-top: 45px;" ><a href="mailto:ramendra.x.tripathi@gmail.com"> Email: ramendra.x.tripathi@gmail.com</a></h4>		</div>
+					<i><h4 class="elementor-heading-title elementor-size-default" style="margin-top: 45px; opacity: 0.62;" >Email:<a href="mailto:ramendra.x.tripathi@gmail.com" class="custom-link-email-fade">  ramendra.x.tripathi@gmail.com</a></h4></i>
 				</div>
-				<div class="elementor-element elementor-element-9db2d2e elementor-view-default elementor-invisible elementor-widget elementor-widget-icon" data-id="9db2d2e" data-element_type="widget" data-settings='{"_animation":"fadeInUp"}' data-widget_type="icon.default">
+			</div>
+			<div class="elementor-element elementor-element-9db2d2e elementor-view-default elementor-widget elementor-widget-icon" data-id="9db2d2e" data-element_type="widget" data-widget_type="icon.default">
 				<div class="elementor-widget-container">
 					<!-- <div class="elementor-icon-wrapper">
-			<a class="elementor-icon elementor-animation-sink" href="#professionalwork">
-			<svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-down" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>			</a>
-		</div> -->
-		<div style="height: 20px;"></div>
-		<div class="elementor-element elementor-element-custom-gold-heading elementor-invisible elementor-widget elementor-widget-heading" data-id="custom-gold-heading" data-element_type="widget" data-settings='{"_animation":"fadeInUp"}' data-widget_type="heading.default" style="margin-right: 0px; opacity: 0.62;">
-			<div class="elementor-widget-container custom-nav-links">
-				<style>
-					.custom-link-fade {
-						color: whitesmoke !important;
-						font-weight: bold !important;
-						text-transform: uppercase !important;
-						letter-spacing: 2px;
-						font-family: 'Arial', sans-serif;
-						text-decoration: none;
-						transition: color 0.2s, filter 0.2s, transform 0.2s;
-						display: inline-block;
-					}
-					.custom-link-fade:hover {
-						color: #00ffff !important;
-						transform: scale(.99);
-					}
-					.custom-nav-links {
-						display: flex;
-						justify-content: center;
-						align-items: center;
-						flex-wrap: wrap;
-						gap: 0.5em;
-					}
-					.custom-nav-links .custom-link-group {
-						display: flex;
-						align-items: center;
-						gap: 0.2em;
-					}
-					.custom-nav-links .custom-sep {
-						color: #BF9D68;
-						/* margin: 0 12px; */
-						font-weight: bold;
-						font-size: 1.2em;
-					}
-
-					.custom-dis{
-						display: none;
-					}
-					@media (max-width: 600px) {
-						.custom-nav-links {
-							flex-direction: column;
-							gap: 0.2em;
-						}
-						.custom-nav-links .custom-sep {
-							margin: 0 0 2px 0;
-							font-size: 1em;
-						}
-						.custom-link-fade {
-							font-size: 1em;
-						}
-						.custom-nav-links .custom-link-group {
-							gap: 0.2em;
-						}
-						.custom-dis{
-							display: flex;
-						}
-					}
-				</style>
-				<div class="custom-link-group">
-					<span>&gt;</span>
-					<a href="#professionalwork" class="custom-link-fade">Professional Work</a>
-					<span class="custom-dis">&lt;</span>
+						<a class="elementor-icon elementor-animation-sink" href="#professionalwork">
+						<svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-down" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>			</a>
+					</div> -->
+					<div style="height: 20px;"></div>
+					<div class="elementor-element elementor-element-custom-gold-heading elementor-widget elementor-widget-heading" data-id="custom-gold-heading" data-element_type="widget" data-widget_type="heading.default" style="margin-right: 0px; opacity: 0.62;">
+						<div class="elementor-widget-container custom-nav-links">
+							<div class="custom-link-group">
+								<span>&gt;</span>
+								<a href="#professionalwork" class="custom-link-fade">Professional Work</a>
+								<span class="custom-dis">&lt;</span>
+							</div>
+							<span class="custom-sep">|</span>
+							<div class="custom-link-group">
+								<span class="custom-dis">&gt;</span>
+								<a href="writing-samples/index.html" target="_blank" rel="noopener" class="custom-link-fade">Writing Samples</a>
+								<span>&lt;</span>
+							</div>
+						</div>
+					</div>
 				</div>
-				<span class="custom-sep">|</span>
-				<div class="custom-link-group">
-					<span class="custom-dis">&gt;</span>
-					<a href="writing-samples/index.html" target="_blank" rel="noopener" class="custom-link-fade">Writing Samples</a>
-					<span>&lt;</span>
+			</div>
+			<div class="elementor-element elementor-element-b20e871 elementor-widget elementor-widget-spacer" data-id="b20e871" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+						<div class="elementor-spacer-inner"></div>
+					</div>
 				</div>
 			</div>
 		</div>
-				</div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-b20e871 elementor-widget elementor-widget-spacer" data-id="b20e871" data-element_type="widget" data-widget_type="spacer.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-spacer">
-			<div class="elementor-spacer-inner"></div>
-		</div>
-				</div>
-				</div>
-					</div>
-				</div>
 		<div class="elementor-element elementor-element-97e872e e-flex e-con-boxed e-con e-parent" data-id="97e872e" data-element_type="container">
 					<div class="e-con-inner">
 					</div>
@@ -570,8 +573,8 @@ var astra = {"break_point":"921","isRtl":"","is_scroll_to_id":"1","is_scroll_to_
 var starter_templates_zip_preview = {"AstColorPaletteVarPrefix":"--ast-global-color-","AstEleColorPaletteVarPrefix":["ast-global-color-0","ast-global-color-1","ast-global-color-2","ast-global-color-3","ast-global-color-4","ast-global-color-5","ast-global-color-6","ast-global-color-7","ast-global-color-8"]};
 </script>
 <script src="wp-content/plugins/astra-sites/inc/lib/onboarding/assets/dist/template-preview/main.js?ver=06758d4d807d9d22c6ea" id="starter-templates-zip-preview-js"></script>
-<script src="wp-content/plugins/easy-fancybox/vendor/purify.min.js?ver=6.8.1" id="fancybox-purify-js"></script>
-<script src="wp-content/plugins/easy-fancybox/fancybox/1.5.4/jquery.fancybox.min.js?ver=6.8.1" id="jquery-fancybox-js"></script>
+<!-- <script src="wp-content/plugins/easy-fancybox/vendor/purify.min.js?ver=6.8.1" id="fancybox-purify-js"></script>
+<script src="wp-content/plugins/easy-fancybox/fancybox/1.5.4/jquery.fancybox.min.js?ver=6.8.1" id="jquery-fancybox-js"></script> -->
 <!-- <script id="jquery-fancybox-js-after">
 var fb_timeout, fb_opts={'autoScale':true,'showCloseButton':true,'width':560,'height':340,'margin':20,'pixelRatio':'false','padding':10,'centerOnScroll':false,'enableEscapeButton':true,'speedIn':300,'speedOut':300,'overlayShow':true,'hideOnOverlayClick':true,'overlayColor':'#000','overlayOpacity':0.6,'minViewportWidth':320,'minVpHeight':320,'disableCoreLightbox':'true','enableBlockControls':'true','fancybox_openBlockControls':'true' };
 if(typeof easy_fancybox_handler==='undefined'){
@@ -594,8 +597,8 @@ var easy_fancybox_auto=function(){setTimeout(function(){jQuery('a#fancybox-auto,
 jQuery(easy_fancybox_handler);jQuery(document).on('post-load',easy_fancybox_handler);
 jQuery(easy_fancybox_auto);
 </script> -->
-<script src="wp-content/plugins/easy-fancybox/vendor/jquery.easing.min.js?ver=1.4.1" id="jquery-easing-js"></script>
-<script src="wp-content/plugins/easy-fancybox/vendor/jquery.mousewheel.min.js?ver=3.1.13" id="jquery-mousewheel-js"></script>
+<!-- <script src="wp-content/plugins/easy-fancybox/vendor/jquery.easing.min.js?ver=1.4.1" id="jquery-easing-js"></script>
+<script src="wp-content/plugins/easy-fancybox/vendor/jquery.mousewheel.min.js?ver=3.1.13" id="jquery-mousewheel-js"></script> -->
 <script src="wp-content/plugins/pro-elements/assets/js/webpack-pro.runtime.min.js?ver=3.23.3" id="elementor-pro-webpack-runtime-js"></script>
 <script src="wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.24.2" id="elementor-webpack-runtime-js"></script>
 <script src="wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.24.2" id="elementor-frontend-modules-js"></script>
@@ -610,7 +613,7 @@ var ElementorProFrontendConfig = {"ajaxurl":"wp-admin\/admin-ajax.php","nonce":"
 <script src="wp-content/plugins/pro-elements/assets/js/frontend.min.js?ver=3.23.3" id="elementor-pro-frontend-js"></script>
 <script src="wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
 <script id="elementor-frontend-js-before">
-var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.24.2","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"container_grid":true,"e_swiper_latest":true,"e_nested_atomic_repeaters":true,"e_optimized_control_loading":true,"e_onboarding":true,"theme_builder_v2":true,"home_screen":true,"ai-layout":true,"editor_v2":true,"e_element_cache":true,"link-in-bio":true,"floating-buttons":true,"display-conditions":true,"form-submissions":true,"taxonomy-filter":true,"search":true},"urls":{"assets":"wp-content\/plugins\/elementor\/assets\/","ajaxurl":"wp-admin\/admin-ajax.php"},"nonces":{"floatingButtonsClickTracking":"d39283e647"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"lightbox_title_src":"caption","body_background_background":"classic","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_description_src":"description"},"post":{"id":213,"title":"Ramendra%27s%20Portfolio%20%E2%80%93%20This%20is%20my%20Portfolio","excerpt":"","featuredImage":false}};
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperArialabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.24.2","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"container_grid":true,"e_swiper_latest":true,"e_nested_atomic_repeaters":true,"e_optimized_control_loading":true,"e_onboarding":true,"theme_builder_v2":true,"home_screen":true,"ai-layout":true,"editor_v2":true,"e_element_cache":true,"link-in-bio":true,"floating-buttons":true,"display-conditions":true,"form-submissions":true,"taxonomy-filter":true,"search":true},"urls":{"assets":"wp-content\/plugins\/elementor\/assets\/","ajaxurl":"wp-admin\/admin-ajax.php"},"nonces":{"floatingButtonsClickTracking":"d39283e647"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"lightbox_title_src":"caption","body_background_background":"classic","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_description_src":"description"},"post":{"id":213,"title":"Ramendra%27s%20Portfolio%20%E2%80%93%20This%20is%20my%20Portfolio","excerpt":"","featuredImage":false}};
 </script>
 <script src="wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.24.2" id="elementor-frontend-js"></script>
 <script src="wp-content/plugins/pro-elements/assets/js/elements-handlers.min.js?ver=3.23.3" id="pro-elements-handlers-js"></script>
