@@ -681,6 +681,26 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
   background-color: #a2834f; /* slightly darker */
   box-shadow: 0 6px 12px rgba(162, 131, 79, 0.7);
 }
+/* === Mobile Adjustments === */
+@media (max-width: 600px) {
+  .fab {
+	  background-color: #BF9D68!important;
+  color: #222 !important;
+  border: none !important;
+  border-color: #BF9D68!important;
+  border-radius: 10px 10px 10px 10px!important;
+    bottom: 30px;  /* Move button closer to the bottom edge */
+    right: 90px;   /* Move button closer to the right edge */
+    font-size: 0.9rem;  /* Reduce font size for smaller screens */
+    padding: 0.5em 1em;
+	height: 50px;  /* Adjust padding for better mobile fit */
+    border-width: 5px;  /* Reduce border width */
+  }
+
+  .fab:hover {
+    background-color: #a2834f; /* Slightly darker color remains the same */
+  }}
+
 			</style>
 			<a href="writing-samples/index.html">
 			  <button class="fab">
